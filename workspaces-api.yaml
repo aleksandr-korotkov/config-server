@@ -1,5 +1,7 @@
 eureka:
   client:
+    fetchRegistry: true
+    registryFetchIntervalSeconds: 5
     healthcheck:
       enabled: true
     serviceUrl:
