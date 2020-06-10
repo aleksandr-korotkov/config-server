@@ -1,8 +1,4 @@
 eureka:
   client:
-    fetchRegistry: true
-    registryFetchIntervalSeconds: 5
-    healthcheck:
-      enabled: true
     serviceUrl:
       defaultZone: http://localhost:8282/eureka/
