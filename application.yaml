@@ -2,3 +2,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka-service-registry:8282/eureka/
+spring:
+  logging:
+    appender:
+      name:"logback"
+        destination: logstash:5000
+        encoder class: "net.logstash.logback.encoder.LogstashEncoder"
+    root level:"DEBUG"
+      appender-ref ref:"logback"
+    
