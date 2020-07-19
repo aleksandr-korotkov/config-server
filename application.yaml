@@ -4,15 +4,15 @@ eureka:
       defaultZone: http://eureka-service-registry:8282/eureka/
 spring:
   logging:
-configuration: 
-   appender: 
-    destination: "logstash:5000"
-    encoder: 
-     _class: "net.logstash.logback.encoder.LogstashEncoder"
-    _name: logback
-    _class: "net.logstash.logback.appender.LogstashTcpSocketAppender"
-   root: 
-    "appender-ref": 
-     _ref: logback
-    _level: DEBUG
-   _debug: true
+    configuration: 
+     appender: 
+      destination: "logstash:5000"
+      encoder: 
+       _class: "net.logstash.logback.encoder.LogstashEncoder"
+      _name: logback
+      _class: "net.logstash.logback.appender.LogstashTcpSocketAppender"
+     root: 
+      "appender-ref": 
+       _ref: logback
+      _level: DEBUG
+     _debug: true
